@@ -1,16 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class PlayerMovement : MonoBehaviour
+public class BeginningTheGame : MonoBehaviour
 {
 
-
     [SerializeField]
-    private KeyCode LeftButton;
-    [SerializeField]
-    private KeyCode RightButton;
-
+    private KeyCode StartGame;
 
     // Start is called before the first frame update
     void Start()
@@ -21,15 +18,9 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-
-
-
-
-
-
-
-
-
+        if (Input.GetKeyDown(StartGame))
+        {
+            SceneManager.LoadScene(1);
+        }
     }
 }
