@@ -26,9 +26,9 @@ public class PlaneScript : MonoBehaviour
             transform.Rotate(new Vector3(0, 0, rotation));
             transform.position = pos;
 
-         if (rotation > 0)
+         if ( transform.rotation.z > 0)
             {
-               //Loadscene
+                Debug.Log("the plane is saved");
             }
      
         }
