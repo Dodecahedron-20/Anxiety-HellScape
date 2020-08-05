@@ -145,7 +145,7 @@ MonoBehaviour:
   UpButton: 119
   DownButton: 115
   VerticalAccess: 1
-  StartSpeed: 2
+  StartSpeed: 3
   AditionalSpeed: 1
   SpeedText: {fileID: 0}
 --- !u!50 &1539957560329931623
