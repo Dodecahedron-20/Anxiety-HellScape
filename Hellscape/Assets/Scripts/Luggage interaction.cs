@@ -2,34 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class shrinking : MonoBehaviour
+public class Luggageinteraction : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        
     }
-
-
-    private void Shrink()
-    {
-        transform.scale --1;
-
-
-
-
-    }
-
-
-
-
-
-
-
 }
