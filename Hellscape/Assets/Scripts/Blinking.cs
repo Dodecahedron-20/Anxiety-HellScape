@@ -6,7 +6,7 @@ public class Blinking : MonoBehaviour
 {
 
     public GameObject objectflash;
-
+    
     
 
      void Start()
