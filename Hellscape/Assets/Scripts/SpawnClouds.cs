@@ -10,7 +10,8 @@ public class SpawnClouds : MonoBehaviour
     [SerializeField]
     private GameObject CloudsPrefab;
 
-
+    [SerializeField]
+    private int height;
 
     // Start is called before the first frame update
     void Start()
@@ -31,7 +32,7 @@ public class SpawnClouds : MonoBehaviour
     {
 
         yield return new WaitForSeconds(delay);
-        Instantiate(CloudsPrefab, new Vector3(15, 0, 0), Quaternion.identity);
+        Instantiate(CloudsPrefab, new Vector3(15, height, 0), Quaternion.identity);
         StartCoroutine(makeclouds());
 
 

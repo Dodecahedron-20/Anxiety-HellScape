@@ -359,6 +359,7 @@ MonoBehaviour:
   delay: 8
   CloudsPrefab: {fileID: 1218469476507150360, guid: 7a6c8df40c51b6244bdfb659af33e083,
     type: 3}
+  height: -10
 --- !u!4 &239079944
 Transform:
   m_ObjectHideFlags: 0
@@ -648,6 +649,7 @@ MonoBehaviour:
   delay: 8
   CloudsPrefab: {fileID: 1218469476507150360, guid: 7a6c8df40c51b6244bdfb659af33e083,
     type: 3}
+  height: 0
 --- !u!4 &558336849
 Transform:
   m_ObjectHideFlags: 0
@@ -843,6 +845,7 @@ MonoBehaviour:
   delay: 8
   CloudsPrefab: {fileID: 1218469476507150360, guid: 7a6c8df40c51b6244bdfb659af33e083,
     type: 3}
+  height: -20
 --- !u!4 &776403849
 Transform:
   m_ObjectHideFlags: 0
@@ -1699,7 +1702,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1989556164}
   m_LocalRotation: {x: -0, y: -0, z: -0.2644292, w: 0.9644051}
-  m_LocalPosition: {x: 0.26, y: 0.23999998, z: 0}
+  m_LocalPosition: {x: 0.26, y: 0.23999998, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1876490838}
