@@ -19,7 +19,7 @@ public class shrinking : MonoBehaviour
 
     private void Shrink()
     {
-        transform.scale --1;
+        
 
 
 
