@@ -19,7 +19,6 @@ public class shrinking : MonoBehaviour
 
     private void Shrink()
     {
-        
 
 
 

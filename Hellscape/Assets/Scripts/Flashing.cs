@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Flashing : MonoBehaviour
+public class Flash : MonoBehaviour
 {
     public GameObject objectflash;
     public static bool flash = false;
@@ -16,7 +16,5 @@ public class Flashing : MonoBehaviour
         else
        
         objectflash.SetActive(true);
-        
-
     }
 }
