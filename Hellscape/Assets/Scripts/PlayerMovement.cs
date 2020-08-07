@@ -19,6 +19,8 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField]
     private bool VerticalAccess;
+    [SerializeField]
+    private bool AllAccess;
 
     //all speed things. Speed is current, Additonal is to add and Start is the beginning
     private float Speed;
@@ -29,13 +31,15 @@ public class PlayerMovement : MonoBehaviour
 
 
     [SerializeField]
-    private Text SpeedText;
+    private SpriteRenderer sr;
+
+    
 
     // Start is called before the first frame update
     void Start()
     {
         Speed = StartSpeed;
-        SpeedText.text = " " + Speed;
+        
     }
 
     // Update is called once per frame
@@ -45,15 +49,33 @@ public class PlayerMovement : MonoBehaviour
         var horiz = 0;
         var vert = 0;
 
-        if (Input.GetKey(LeftButton))
-        {
-            horiz -= 1;
-        }
+        
 
         if (Input.GetKey(RightButton))
         {
+            
+
             horiz += 1;
+
         }
+
+        if (AllAccess == true)
+        {
+
+            if (Input.GetKey(LeftButton))
+            {
+                if (sr.flipX)
+                {
+                    sr.flipX = false;
+                }
+                horiz -= 1;
+
+            }
+        }
+
+
+
+        
 
 
         if (VerticalAccess == true)
@@ -81,7 +103,7 @@ public class PlayerMovement : MonoBehaviour
     public void AddingSpeed()
     {
         SpeedUp();
-        SpeedText.text = " " + Speed;
+        
     }
 
     private float SpeedUp()

@@ -6,8 +6,11 @@ using UnityEngine.SceneManagement;
 public class BeginningTheGame : MonoBehaviour
 {
 
+    
+
     [SerializeField]
-    private KeyCode StartGame;
+    private int NextLevel;
+
 
     // Start is called before the first frame update
     void Start()
@@ -18,9 +21,20 @@ public class BeginningTheGame : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(StartGame))
-        {
-            SceneManager.LoadScene(1);
-        }
+        
     }
+
+
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
+    public void StartGame()
+    {
+        SceneManager.LoadScene(NextLevel);
+    }
+
+
 }

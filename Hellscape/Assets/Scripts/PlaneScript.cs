@@ -1,12 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlaneScript : MonoBehaviour
 {
 
     public float speed = 1f;
     public float rotation = 1f;
+
+    [SerializeField]
+    private int NextLevel;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +24,7 @@ public class PlaneScript : MonoBehaviour
        
       
 
-        if (Input.GetKeyDown(KeyCode.UpArrow))
+        if (Input.GetKeyDown(KeyCode.W))
         {
             Vector3 pos = transform.position;
             pos.y += speed * Time.deltaTime;
@@ -28,7 +33,7 @@ public class PlaneScript : MonoBehaviour
 
          if ( transform.rotation.z > 0)
             {
-                Debug.Log("the plane is saved");
+                SceneManager.LoadScene(NextLevel);
             }
      
         }
